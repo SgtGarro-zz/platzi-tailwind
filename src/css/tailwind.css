@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-section {
+  @apply text-2xl font-Montserrat text-primary font-semibold lg:text-4xl dark:text-white;
+}
+.card-primary {
+  @apply w-40 h-48 rounded-md bg-terciary shadow-md flex-none text-white lg:h-80 lg:w-72 dark:bg-gray-700 transition hover:translate-y-2 hover:scale-105;
+}
+.card-secondary {
+  @apply w-40 h-48 rounded-md shadow-md flex-none text-secondary lg:h-80 lg:w-64 dark:text-white dark:bg-gray-800 transition hover:translate-y-2 hover:scale-105;
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-trend {
+    display: grid;
+    grid-template-areas:
+      "a a a"
+      "b c c"
+      "b d d";
+    height: 80vh;
+    max-height: 1200px;
+    min-height: 1000px;
+    gap: 30px;
+  }
+  .lg\:grid-trend-a {
+    grid-area: a;
+  }
+  .lg\:grid-trend-b {
+    grid-area: b;
+  }
+  .lg\:grid-trend-c {
+    grid-area: c;
+  }
+  .lg\:grid-trend-d {
+    grid-area: d;
+  }
+}
